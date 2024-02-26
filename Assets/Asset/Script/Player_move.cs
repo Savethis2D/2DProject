@@ -30,8 +30,9 @@ public class Player_move : MonoBehaviour
         float y = joy2.Vertical;
         Joystick = new Vector3(x, y, 0);
         Joystick.Normalize();
-
-        transform.position += Joystick * speed * Time.deltaTime;
+        if (GameManager.instance.isLive == true)
+        {
+            transform.position += Joystick * speed * Time.deltaTime;
 
             if (joy2.Horizontal > 0)
             {
@@ -41,10 +42,10 @@ public class Player_move : MonoBehaviour
             if (joy2.Horizontal < 0)
             {
                 transform.localScale = new Vector3(2, 2, 2);
-                mySprite.flipX = true ;
+                mySprite.flipX = true;
             }
+        }
 
-        
     }
     // Start is called before the first frame update
     void Start()

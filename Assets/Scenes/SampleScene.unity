@@ -27222,6 +27222,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 704202335}
+  pauseBtn: {fileID: 0}
+  resumeBtn: {fileID: 0}
   hp: {fileID: 1080581456}
 --- !u!114 &704202337
 MonoBehaviour:
@@ -53874,6 +53876,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 704202335}
+  pauseBtn: {fileID: 0}
+  resumeBtn: {fileID: 0}
   hp: {fileID: 1046751126}
 --- !u!114 &1264818108
 MonoBehaviour:
