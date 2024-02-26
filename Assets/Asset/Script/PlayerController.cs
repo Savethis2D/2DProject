@@ -8,7 +8,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     public Vector2 inputVec;
     public Scaner scan;
-
+   // public bl_Joystick joy;
+    public Joystick joy2;
     public float speed = 6.0f;
     private Rigidbody2D myRigid;
     private SpriteRenderer mySprite;
@@ -63,6 +64,8 @@ public class PlayerController : MonoBehaviour
 
 
         inputVec.x = Input.GetAxisRaw("Horizontal");
+        inputVec.x = joy2.Horizontal;
+        inputVec.y = joy2.Vertical;
         inputVec.y = Input.GetAxisRaw("Vertical");
     }
 

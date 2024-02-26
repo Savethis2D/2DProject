@@ -10,7 +10,8 @@ public class Weapon : MonoBehaviour
     public float damage;
     public int count;
     public float speed;
-    public bl_Joystick joy;
+    //public bl_Joystick joy;
+   // public Joystick joy2;
 
     private bool isGas;
     private bool isMes;
@@ -338,7 +339,7 @@ public class Weapon : MonoBehaviour
                 Debug.Log(player.inputVec.x);
                 Debug.Log(player.inputVec.y);
 
-                if (playerJoy.joy.Horizontal == 0.0f && playerJoy.joy.Vertical == 0.0f)
+                if (playerJoy.joy2.Horizontal == 0.0f && playerJoy.joy2.Vertical == 0.0f)
                 {
 
                     if (!player.GetComponent<SpriteRenderer>().flipX)
@@ -354,8 +355,9 @@ public class Weapon : MonoBehaviour
                 }
                 else
                 {
-                    attack.position += AdjustAttackXPosition(attack, playerJoy.Joystick);
+                    attack.position += AdjustAttackXPosition(attack,  playerJoy.Joystick);
                     attack.position += AdjustAttackYPosition(attack, playerJoy.Joystick);
+                Debug.Log(playerJoy.Joystick);
                 }
 
                 attack.GetComponent<Attack>().Init(damage, -100, Vector3.zero);
@@ -374,13 +376,13 @@ public class Weapon : MonoBehaviour
 
             if (direction.x > 0f)
             {
-                attackPos += new Vector3(3, 0, 0);
+                attackPos += playerJoy.Joystick*2;
                 attack.GetComponent<SpriteRenderer>().flipX = false;
             }
             else if (direction.x < 0f)
             {
-                attackPos += new Vector3(-3, 0, 0);
-                attack.GetComponent<SpriteRenderer>().flipX = true;
+                attackPos += playerJoy.Joystick*2;
+            attack.GetComponent<SpriteRenderer>().flipX = true;
             }
 
             return attackPos;
@@ -392,13 +394,13 @@ public class Weapon : MonoBehaviour
 
             if (direction.y > 0f)
             {
-                attackPos += new Vector3(0, 3, 0);
-                attack.GetComponent<SpriteRenderer>().flipY = false;
+                attackPos += playerJoy.Joystick*2;
+            attack.GetComponent<SpriteRenderer>().flipY = false;
             }
             else if (direction.y < 0f)
             {
-                attackPos += new Vector3(0, -3, 0);
-                attack.GetComponent<SpriteRenderer>().flipY = true;
+                attackPos += playerJoy.Joystick*2;
+            attack.GetComponent<SpriteRenderer>().flipY = true;
             }
 
             return attackPos;
