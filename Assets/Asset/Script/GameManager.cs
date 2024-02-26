@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
     public PlayerController player;
+    public Player_move playerJoy;
     public PoolManager pool;
     public Spawner spawner;
     [Header("Player Setting")]

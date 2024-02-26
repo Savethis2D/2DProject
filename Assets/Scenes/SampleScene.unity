@@ -27240,6 +27240,7 @@ MonoBehaviour:
   isLive: 1
   isLevelUp: 0
   player: {fileID: 1383929316}
+  playerJoy: {fileID: 1383929320}
   pool: {fileID: 1807947593}
   spawner: {fileID: 0}
   level: 0
@@ -53882,6 +53883,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joy: {fileID: 1722133013}
+  joys: {fileID: 1722133014}
+  Joystick: {x: 0, y: 0, z: 0}
   speed: 6
 --- !u!1 &1391095464
 GameObject:
@@ -55209,6 +55212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Joystick
       objectReference: {fileID: 0}
+    - target: {fileID: 165178, guid: 7973d81b61b491640b7a0d00c9de83d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 11467636, guid: 7973d81b61b491640b7a0d00c9de83d3, type: 3}
       propertyPath: SmoothTime
       value: 1
@@ -55313,12 +55320,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 11467636, guid: 7973d81b61b491640b7a0d00c9de83d3, type: 3}
   m_PrefabInstance: {fileID: 1722133011}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1722133014}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77624f28614e33247a9ad124a2d27f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1722133014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 165178, guid: 7973d81b61b491640b7a0d00c9de83d3, type: 3}
+  m_PrefabInstance: {fileID: 1722133011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1779486270
 GameObject:
   m_ObjectHideFlags: 0

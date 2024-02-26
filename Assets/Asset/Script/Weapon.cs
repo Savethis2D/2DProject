@@ -10,19 +10,20 @@ public class Weapon : MonoBehaviour
     public float damage;
     public int count;
     public float speed;
-
+    public bl_Joystick joy;
 
     private bool isGas;
     private bool isMes;
     private float timer;
     private float mesTimer;
     private PlayerController player;
-
+    private Player_move playerJoy;
 
 
     void Awake()
     {
         player = GameManager.instance.player;
+        playerJoy = GameManager.instance.playerJoy;
         isGas = false;
         isMes = false;
 
@@ -337,7 +338,7 @@ public class Weapon : MonoBehaviour
                 Debug.Log(player.inputVec.x);
                 Debug.Log(player.inputVec.y);
 
-                if (player.inputVec.x == 0.0f && player.inputVec.y == 0.0f)
+                if (playerJoy.joy.Horizontal == 0.0f && playerJoy.joy.Vertical == 0.0f)
                 {
 
                     if (!player.GetComponent<SpriteRenderer>().flipX)
@@ -353,8 +354,8 @@ public class Weapon : MonoBehaviour
                 }
                 else
                 {
-                    attack.position += AdjustAttackXPosition(attack, player.inputVec);
-                    attack.position += AdjustAttackYPosition(attack, player.inputVec);
+                    attack.position += AdjustAttackXPosition(attack, playerJoy.Joystick);
+                    attack.position += AdjustAttackYPosition(attack, playerJoy.Joystick);
                 }
 
                 attack.GetComponent<Attack>().Init(damage, -100, Vector3.zero);
@@ -387,7 +388,7 @@ public class Weapon : MonoBehaviour
 
         private Vector3 AdjustAttackYPosition(Transform attack, Vector3 direction)
         {
-            Vector3 attackPos = new Vector3(0, 0, 0);
+        Vector3 attackPos = new Vector3(0, 0, 0);
 
             if (direction.y > 0f)
             {
