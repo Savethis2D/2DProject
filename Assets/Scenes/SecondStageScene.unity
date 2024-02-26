@@ -2994,7 +2994,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18.145996, y: 474.42688}
+  m_AnchoredPosition: {x: 16, y: 378}
   m_SizeDelta: {x: 436.9654, y: 133.1463}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623036608
@@ -54421,7 +54421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1104463288
 RectTransform:
   m_ObjectHideFlags: 0
@@ -54711,8 +54711,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 9
-  item: {fileID: 0}
-  itemtext: {fileID: 0}
+  item: {fileID: 590697194}
+  itemtext: {fileID: 590697196}
 --- !u!114 &1153680740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79918,8 +79918,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 10
-  item: {fileID: 0}
-  itemtext: {fileID: 0}
+  item: {fileID: 1002095397}
+  itemtext: {fileID: 1002095399}
 --- !u!114 &1435062168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80628,11 +80628,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3432643151417746443, guid: 47f4eeef80492f8428944d9f07068499, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3432643151417746443, guid: 47f4eeef80492f8428944d9f07068499, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -413
+      value: -358
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3432643151372194053, guid: 47f4eeef80492f8428944d9f07068499, type: 3}
@@ -105891,8 +105891,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51, y: -28.208412}
-  m_SizeDelta: {x: 1666.597, y: 909.9258}
+  m_AnchoredPosition: {x: 267.61902, y: 0}
+  m_SizeDelta: {x: 3551.3687, y: 892.8461}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1858783530
 MonoBehaviour:
@@ -106170,8 +106170,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 12
-  item: {fileID: 0}
-  itemtext: {fileID: 0}
+  item: {fileID: 1205715347}
+  itemtext: {fileID: 1205715349}
 --- !u!114 &1902910568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106281,8 +106281,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 11
-  item: {fileID: 0}
-  itemtext: {fileID: 0}
+  item: {fileID: 61381512}
+  itemtext: {fileID: 61381514}
 --- !u!114 &1909604376
 MonoBehaviour:
   m_ObjectHideFlags: 0
