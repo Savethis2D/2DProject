@@ -1720,6 +1720,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 7
+  item: {fileID: 0}
+  itemtext: {fileID: 0}
 --- !u!1 &336754213
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,6 +2238,7 @@ MonoBehaviour:
   level: 0
   weapon: {fileID: 0}
   passive: {fileID: 0}
+  textLevel: {fileID: 0}
 --- !u!114 &435966171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3033,7 +3036,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 735, y: 467.5}
+  m_AnchoredPosition: {x: -595, y: 460.5}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602595782
@@ -3307,6 +3310,7 @@ MonoBehaviour:
   level: 0
   weapon: {fileID: 0}
   passive: {fileID: 0}
+  textLevel: {fileID: 0}
 --- !u!114 &666534471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3447,7 +3451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 450, y: 456.40002}
+  m_AnchoredPosition: {x: -880, y: 449.40002}
   m_SizeDelta: {x: 96, y: 96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &677847335
@@ -53966,6 +53970,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 3
+  item: {fileID: 0}
+  itemtext: {fileID: 0}
 --- !u!114 &1049102491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78934,6 +78940,7 @@ MonoBehaviour:
   level: 0
   weapon: {fileID: 0}
   passive: {fileID: 0}
+  textLevel: {fileID: 0}
 --- !u!114 &1276765649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79301,7 +79308,7 @@ GameObject:
   - component: {fileID: 1354951109}
   - component: {fileID: 1354951108}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79325,7 +79332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -883.4, y: 441.7}
+  m_AnchoredPosition: {x: 899.9, y: 471.6}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1354951108
@@ -79493,6 +79500,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  item: {fileID: 0}
+  itemtext: {fileID: 0}
 --- !u!114 &1452336525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79638,6 +79647,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 8
+  item: {fileID: 0}
+  itemtext: {fileID: 0}
 --- !u!114 &1460203794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80094,7 +80105,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 505, y: 503}
+  m_AnchoredPosition: {x: -825, y: 496}
   m_SizeDelta: {x: 150, y: 75}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1564025210
@@ -80125,6 +80136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
+  item: {fileID: 0}
+  itemtext: {fileID: 0}
 --- !u!114 &1564025212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80219,6 +80232,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 5
+  item: {fileID: 0}
+  itemtext: {fileID: 0}
 --- !u!114 &1621835384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80335,6 +80350,7 @@ MonoBehaviour:
   level: 0
   weapon: {fileID: 0}
   passive: {fileID: 0}
+  textLevel: {fileID: 0}
 --- !u!114 &1636148224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80477,7 +80493,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 790, y: 503}
+  m_AnchoredPosition: {x: -540, y: 496}
   m_SizeDelta: {x: 150, y: 75}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1681653914
@@ -80508,6 +80524,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 5
+  item: {fileID: 0}
+  itemtext: {fileID: 0}
 --- !u!114 &1681653916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106083,6 +106101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 4
+  item: {fileID: 0}
+  itemtext: {fileID: 0}
 --- !u!1 &2073032742
 GameObject:
   m_ObjectHideFlags: 0
