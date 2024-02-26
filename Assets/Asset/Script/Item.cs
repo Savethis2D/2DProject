@@ -10,7 +10,7 @@ public class Item : MonoBehaviour
     public Passive passive;
 
     Image icon;
-    Text textLevel;
+   public Text textLevel;
     Text textName;
     Text textDesc;
 

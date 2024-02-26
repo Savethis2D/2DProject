@@ -17,7 +17,7 @@ public class LevelUp : MonoBehaviour
     {
         Next();
         healthbar.SetActive(false);
-        rect.localScale = new Vector3(4, 4, 4);
+        rect.localScale = new Vector3(1, 1, 1);
         GameManager.instance.Stop();
         AudioManager.instance.Playsfx(AudioManager.Sfx.levelUp);
     }

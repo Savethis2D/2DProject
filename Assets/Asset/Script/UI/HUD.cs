@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
 {
-    public enum InfoType { Exp, Level, Kill, Time, Health, Gold, Totalgold, ObjHealth, ObjText}
+    public enum InfoType { Exp, Level, Kill, Time, Health, Gold, Totalgold, ObjHealth, ObjText,Weapon1,Weapon0,Weapon2,Weapon3}
     public InfoType type;
     Text myText;
     Slider mySlider;
-
+    public GameObject item;
+   // public Text lvl;
+    public Item itemtext;
     private void Awake()
     {
         myText = GetComponent<Text>();
@@ -69,6 +71,22 @@ public class HUD : MonoBehaviour
                 myText.text = string.Format("{0:F0}%", TowerManager.instance.playerHelath);
                 break;
 
+            case InfoType.Weapon1:
+                //  int Itemlvl = item.
+                myText.text = string.Format("{0:F0}", itemtext.textLevel.text);
+                break;
+            case InfoType.Weapon0:
+                //  int Itemlvl = item.
+                myText.text = string.Format("{0:F0}", itemtext.textLevel.text);
+                break;
+            case InfoType.Weapon2:
+                //  int Itemlvl = item.
+                myText.text = string.Format("{0:F0}", itemtext.textLevel.text);
+                break;
+            case InfoType.Weapon3:
+                //  int Itemlvl = item.
+                myText.text = string.Format("{0:F0}", itemtext.textLevel.text);
+                break;
         }
     }
 }
