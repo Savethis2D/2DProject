@@ -6,6 +6,8 @@ public class Pause : MonoBehaviour
 {
     private bool isPaused = false; // 초기값을 true로 설정
     public GameObject pauseMenu;
+    public GameObject pauseBtn;
+    public GameObject resumeBtn;
     public GameObject hp;
 
     private void Update()
@@ -28,6 +30,10 @@ public class Pause : MonoBehaviour
             isPaused = true; // 일시정지 시 isPaused를 true로 설정
             hp.SetActive(false);
             Time.timeScale = 0;
+
+            resumeBtn.SetActive(true);
+            pauseBtn.SetActive(false);
+
         }
     }
 
@@ -46,6 +52,8 @@ public class Pause : MonoBehaviour
             Time.timeScale = 0;
             hp.SetActive(false);
         }
+        resumeBtn.SetActive(false);
+        pauseBtn.SetActive(true);
     }
 
 }
