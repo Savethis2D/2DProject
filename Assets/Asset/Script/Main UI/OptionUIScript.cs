@@ -24,4 +24,10 @@ public class OptionUIScript : MonoBehaviour
         SceneManager.LoadScene("Main Scene");
     }
 
+    public void onClickReset()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
+
 }
