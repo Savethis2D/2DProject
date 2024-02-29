@@ -70,35 +70,34 @@ public class StartUIScript : MonoBehaviour
 
     public void onClickBack()
     {
+        AudioManager.instance.Playsfx(AudioManager.Sfx.select1);
         Resources.UnloadUnusedAssets();
         SceneManager.LoadScene("Main Scene");
     }
 
     public void onClickNextStage()
     {
+        AudioManager.instance.Playsfx(AudioManager.Sfx.select1);
         index++;
         if (index >= stageSprites.Length)
         {
             index = 0;
         }
-
-
-
     }
 
     public void onClickBackStage()
     {
+        AudioManager.instance.Playsfx(AudioManager.Sfx.select1);
         index--;
         if (index < 0)
         {
             index = stageSprites.Length - 1;
         }
-
-
     }
 
     public void onClickStartButton()
     {
+        AudioManager.instance.Playsfx(AudioManager.Sfx.select1);
         if (Time.timeScale == 0)
         {
             Time.timeScale = 1;

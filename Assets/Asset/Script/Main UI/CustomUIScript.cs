@@ -100,59 +100,65 @@ public class CustomUIScript : MonoBehaviour
 
     public void Buy() //커스텀 능력치 구매 기록 저장
     {
-        if (PlayerPrefs.GetInt("CheckA") <= 1)
+        if(PlayerPrefs.GetInt("PlayerGold") >=PlayerPrefs.GetInt("ItemA"))
         {
-            if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemA") && toggles[0].isOn)
+            AudioManager.instance.Playsfx(AudioManager.Sfx.select1);
+            if (PlayerPrefs.GetInt("CheckA") <= 1)
             {
-                BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemA");
-                PlayerPrefs.SetInt("PlayerGold", BuyCoin);
-                BuyA = 1+PlayerPrefs.GetInt("CheckA");
-                PlayerPrefs.SetInt("CheckA", BuyA);
+                if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemA") && toggles[0].isOn)
+                {
+                    BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemA");
+                    PlayerPrefs.SetInt("PlayerGold", BuyCoin);
+                    BuyA = 1 + PlayerPrefs.GetInt("CheckA");
+                    PlayerPrefs.SetInt("CheckA", BuyA);
+                }
+            }
+            if (PlayerPrefs.GetInt("CheckB") <= 1)
+            {
 
+                if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemB") && toggles[1].isOn)
+                {
+                    BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemB");
+                    PlayerPrefs.SetInt("PlayerGold", BuyCoin);
+                    BuyB = 1 + PlayerPrefs.GetInt("CheckB"); 
+                    PlayerPrefs.SetInt("CheckB", BuyB);
+
+                }
+            }
+            if (PlayerPrefs.GetInt("CheckC") <= 1)
+            {
+                if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemC") && toggles[2].isOn)
+                {
+                    BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemC");
+                    PlayerPrefs.SetInt("PlayerGold", BuyCoin);
+                    BuyC = 1 + PlayerPrefs.GetInt("CheckC"); 
+                    PlayerPrefs.SetInt("CheckC", BuyC);
+                }
+            }
+             if (PlayerPrefs.GetInt("CheckD") <= 1)
+            {
+                if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemD") && toggles[3].isOn)
+                {
+                    BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemD");
+                    PlayerPrefs.SetInt("PlayerGold", BuyCoin);
+                    BuyD = 1 + PlayerPrefs.GetInt("CheckD");
+                    PlayerPrefs.SetInt("CheckD", BuyD);
+                }
+            }
+             if (PlayerPrefs.GetInt("CheckE") <= 1)
+            {
+                if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemE") && toggles[4].isOn)
+                {
+                    BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemE");
+                    PlayerPrefs.SetInt("PlayerGold", BuyCoin);
+                    BuyE = 1 + PlayerPrefs.GetInt("CheckE");
+                    PlayerPrefs.SetInt("CheckE", BuyE);
+                }
             }
         }
-        if (PlayerPrefs.GetInt("CheckB") <= 1)
+        else
         {
-
-            if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemB") && toggles[1].isOn)
-            {
-                BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemB");
-                PlayerPrefs.SetInt("PlayerGold", BuyCoin);
-                BuyB = 1 + PlayerPrefs.GetInt("CheckB"); 
-                PlayerPrefs.SetInt("CheckB", BuyB);
-
-            }
-        }
-
-        if (PlayerPrefs.GetInt("CheckC") <= 1)
-        {
-            if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemC") && toggles[2].isOn)
-            {
-                BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemC");
-                PlayerPrefs.SetInt("PlayerGold", BuyCoin);
-                BuyC = 1 + PlayerPrefs.GetInt("CheckC"); 
-                PlayerPrefs.SetInt("CheckC", BuyC);
-            }
-        }
-        if (PlayerPrefs.GetInt("CheckD") <= 1)
-        {
-            if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemD") && toggles[3].isOn)
-            {
-                BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemD");
-                PlayerPrefs.SetInt("PlayerGold", BuyCoin);
-                BuyD = 1 + PlayerPrefs.GetInt("CheckD");
-                PlayerPrefs.SetInt("CheckD", BuyD);
-            }
-        }
-        if (PlayerPrefs.GetInt("CheckE") <= 1)
-        {
-            if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemE") && toggles[4].isOn)
-            {
-                BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemE");
-                PlayerPrefs.SetInt("PlayerGold", BuyCoin);
-                BuyE = 1 + PlayerPrefs.GetInt("CheckE");
-                PlayerPrefs.SetInt("CheckE", BuyE);
-            }
+            AudioManager.instance.Playsfx(AudioManager.Sfx.select2);
         }
     }
 
