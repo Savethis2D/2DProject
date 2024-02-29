@@ -29,6 +29,7 @@ public class CustomUIScript : MonoBehaviour
         UpdateSelectedToggle();
         customInfoText = transform.Find("Custom Info Text").GetComponent<Text>();
         toggles = toggleGroup.GetComponentsInChildren<Toggle>();
+        SetItem();
 
      /*   PlayerPrefs.SetInt("PlayerGold", 100000);
         PlayerPrefs.SetInt("CheckA", 0);
@@ -87,16 +88,22 @@ public class CustomUIScript : MonoBehaviour
     public int BuyD;
     public int BuyE;
 
+    public void SetItem()
+    {
+        PlayerPrefs.SetInt("ItemA", 3000);
+        PlayerPrefs.SetInt("ItemB", 3000);
+        PlayerPrefs.SetInt("ItemC", 3000);
+        PlayerPrefs.SetInt("ItemD", 3000);
+        PlayerPrefs.SetInt("ItemE", 3000);
+    }
+
 
     public void Buy() //커스텀 능력치 구매 기록 저장
     {
-      
-        
         if (PlayerPrefs.GetInt("CheckA") <= 1)
         {
             if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemA") && toggles[0].isOn)
             {
-                PlayerPrefs.SetInt("ItemA", 3000);
                 BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemA");
                 PlayerPrefs.SetInt("PlayerGold", BuyCoin);
                 BuyA = 1+PlayerPrefs.GetInt("CheckA");
@@ -109,7 +116,6 @@ public class CustomUIScript : MonoBehaviour
 
             if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemB") && toggles[1].isOn)
             {
-                PlayerPrefs.SetInt("ItemB", 3000);
                 BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemB");
                 PlayerPrefs.SetInt("PlayerGold", BuyCoin);
                 BuyB = 1 + PlayerPrefs.GetInt("CheckB"); 
@@ -122,7 +128,6 @@ public class CustomUIScript : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemC") && toggles[2].isOn)
             {
-                PlayerPrefs.SetInt("ItemC", 3000);
                 BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemC");
                 PlayerPrefs.SetInt("PlayerGold", BuyCoin);
                 BuyC = 1 + PlayerPrefs.GetInt("CheckC"); 
@@ -133,7 +138,6 @@ public class CustomUIScript : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemD") && toggles[3].isOn)
             {
-                PlayerPrefs.SetInt("ItemD", 3000);
                 BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemD");
                 PlayerPrefs.SetInt("PlayerGold", BuyCoin);
                 BuyD = 1 + PlayerPrefs.GetInt("CheckD");
@@ -144,7 +148,6 @@ public class CustomUIScript : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("PlayerGold") > PlayerPrefs.GetInt("ItemE") && toggles[4].isOn)
             {
-                PlayerPrefs.SetInt("ItemE", 3000);
                 BuyCoin = PlayerPrefs.GetInt("PlayerGold") - PlayerPrefs.GetInt("ItemE");
                 PlayerPrefs.SetInt("PlayerGold", BuyCoin);
                 BuyE = 1 + PlayerPrefs.GetInt("CheckE");

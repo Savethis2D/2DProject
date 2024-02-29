@@ -5,17 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class OptionUIScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public GameObject warningPopup; 
 
     public void onClickBack()
     {
@@ -26,8 +16,20 @@ public class OptionUIScript : MonoBehaviour
 
     public void onClickReset()
     {
+        AudioManager.instance.Playsfx(AudioManager.Sfx.select1);
         PlayerPrefs.DeleteAll();
+        warningPopup.SetActive(false);
     }
 
+    public void onCloseReset()
+    {
+        AudioManager.instance.Playsfx(AudioManager.Sfx.select1);
+        warningPopup.SetActive(false);
+    }
 
+    public void onActivePopup()
+    {
+        AudioManager.instance.Playsfx(AudioManager.Sfx.select1);
+        warningPopup.SetActive(true);
+    }
 }
