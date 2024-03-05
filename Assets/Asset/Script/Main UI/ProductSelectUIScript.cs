@@ -11,9 +11,9 @@ public class ProductSelectUIScript : MonoBehaviour
     private int number;
     private int beforeNumber = 0;
 
-    private string[] characterInfos = { " ±âº» Á¦Ç° ÀÔ´Ï´Ù.",
-        " ÆÄ¿öÇü Á¦Ç° ÀÔ´Ï´Ù. ",
-        " Äğ°¨Çü Á¦Ç° ÀÔ´Ï´Ù. " };
+    private string[] characterInfos = { " ê¸°ë³¸ ì œí’ˆ ì…ë‹ˆë‹¤.",
+        " íŒŒì›Œí˜• ì œí’ˆ ì…ë‹ˆë‹¤. ",
+        " ì¿¨ê°í˜• ì œí’ˆ ì…ë‹ˆë‹¤. " };
 
     [SerializeField]
     private Button[] buttons;

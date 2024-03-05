@@ -15,11 +15,11 @@ public class CustomUIScript : MonoBehaviour
     public int i;
     private int selectedToggleIndex = -1;
 
-    private string[] info = {" µ¥¹ÌÁö°¡ 10% »ó½ÂÇÕ´Ï´Ù. 3000G ",
-        " ¼Óµµ°¡ 10% »ó½ÂÇÕ´Ï´Ù. 3000G",
-    " ÄğÅ¸ÀÓÀÌ 10% °¨¼ÒÇÕ´Ï´Ù. 3000G" ,
-    " ÃÖ´ëÃ¼·ÂÀÌ 50% »ó½ÂÇÕ´Ï´Ù. 3000G",
-    " °æÇèÄ¡ È¹µæ·üÀÌ 10% »ó½ÂÇÕ´Ï´Ù. 3000G"};
+    private string[] info = {" ë°ë¯¸ì§€ê°€ 10% ìƒìŠ¹í•©ë‹ˆë‹¤. 3000G ",
+        " ì†ë„ê°€ 10% ìƒìŠ¹í•©ë‹ˆë‹¤. 3000G",
+    " ì¿¨íƒ€ì„ì´ 10% ê°ì†Œí•©ë‹ˆë‹¤. 3000G" ,
+    " ìµœëŒ€ì²´ë ¥ì´ 50% ìƒìŠ¹í•©ë‹ˆë‹¤. 3000G",
+    " ê²½í—˜ì¹˜ íšë“ë¥ ì´ 10% ìƒìŠ¹í•©ë‹ˆë‹¤. 3000G"};
 
 
     // Start is called before the first frame update
@@ -36,7 +36,7 @@ public class CustomUIScript : MonoBehaviour
          PlayerPrefs.SetInt("CheckB", 0);
          PlayerPrefs.SetInt("CheckC", 0);
          PlayerPrefs.SetInt("CheckD", 0);
-         PlayerPrefs.SetInt("CheckE", 0); */ //»óÁ¡±¸¸Å ÃÊ±âÈ­
+         PlayerPrefs.SetInt("CheckE", 0); */ //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
     }
 
     // Update is called once per frame
@@ -67,17 +67,17 @@ public class CustomUIScript : MonoBehaviour
     private void UpdateSelectedToggle()
     {
         selectedToggleIndex = -1;
-        // ¸ğµç ToggleÀ» ¼øÈ¸ÇÏ¸é¼­ ¼±ÅÃµÈ Toggle Ã£±â
+        // ï¿½ï¿½ï¿½ Toggleï¿½ï¿½ ï¿½ï¿½È¸ï¿½Ï¸é¼­ ï¿½ï¿½ï¿½Ãµï¿½ Toggle Ã£ï¿½ï¿½
         for (int i = 0; i < toggles.Length; i++)
         {
             if (toggles[i].isOn)
             {
-                // ¼±ÅÃµÈ ToggleÀÇ ¼ø¼­¸¦ º¯¼ö¿¡ ÀúÀå
+                // ï¿½ï¿½ï¿½Ãµï¿½ Toggleï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                 selectedToggleIndex = i;
 
-                // ¼±ÅÃµÈ ToggleÀÇ Á¤º¸¸¦ »ç¿ëÇÒ ¼ö ÀÖÀ½
+                // ï¿½ï¿½ï¿½Ãµï¿½ Toggleï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                 Debug.Log($"Selected Toggle Index: {selectedToggleIndex}");
-                break; // ¼±ÅÃµÈ ToggleÀ» Ã£¾ÒÀ¸¹Ç·Î ·çÇÁ Á¾·á
+                break; // ï¿½ï¿½ï¿½Ãµï¿½ Toggleï¿½ï¿½ Ã£ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             }
         }
     }
@@ -98,7 +98,7 @@ public class CustomUIScript : MonoBehaviour
     }
 
 
-    public void Buy() //Ä¿½ºÅÒ ´É·ÂÄ¡ ±¸¸Å ±â·Ï ÀúÀå
+    public void Buy() //Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½É·ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     {
         if(PlayerPrefs.GetInt("PlayerGold") >=PlayerPrefs.GetInt("ItemA"))
         {
@@ -162,7 +162,7 @@ public class CustomUIScript : MonoBehaviour
         }
     }
 
-    public void ReSetItem() // ÀçÁ¶¸³¹öÆ° ´©¸£¸é ±¸¸ÅÇÑ°Å ¸®¼Â(ÀçÈ­ µ¹·Á¹ŞÀ½)
+    public void ReSetItem() // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ°ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½È­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
     {
         if ( PlayerPrefs.GetInt("CheckA") >=1)
         {
