@@ -21,9 +21,9 @@ public class DataUIScript : MonoBehaviour
     private string[,] dataNameTexts = new string[,]
     {
 
-        {"°¨±â","¼ö¼ú º¸Á¶","",""},
-        {"¾Ë¾à", "¹éÇ÷±¸","¹æ¿ª","¸Þ½º"},
-        {"·¹½Ã³ë", "¾Æµ¥³ë", "¿£Å×·Î","±â»ýÃæ"},
+        {"ê°ê¸°","ìˆ˜ìˆ  ë³´ì¡°","",""},
+        {"ì•Œì•½", "ë°±í˜ˆêµ¬","ë°©ì—­","ë©”ìŠ¤"},
+        {"ë ˆì‹œë…¸", "ì•„ë°ë…¸", "ì—”í…Œë¡œ","ê¸°ìƒì¶©"},
         {"","","",""}
 
 
@@ -32,10 +32,10 @@ public class DataUIScript : MonoBehaviour
     private string[,] dataInfoTexts = new string[,]
     {
 
-        {"ÀÎ·ùÀÇ Èñ¸ÁÀÌ µÇ±â À§ÇÑ À§´ëÇÑ Ã¹ °ÉÀ½!\n½ÇÇè ´ë»óÀº °¨±â ¹ÙÀÌ·¯½ºÀÌ´Ù.","½ÃÇÑºÎ ÀÀ±Þ ¼ö¼ú º¸Á¶¿¡ ¸·´ëÇÑ °øÀ» ¼¼¿ü´Ù!\nÈ¯ÀÚÀÇ °Ç°­»óÅÂ°¡ ¸Å¿ì ÁÁ¾ÆÁ³´Ù.","",""},
-        {"¾ÆÇÃ ¶§ ´Ã ÇÔ²²ÇØ¿Â Ä£±¸ÀÇ ¸ð¾çÀ» º» ¶° ¸¸µç Àåºñ", "¿ì¸® ¸öÀÇ ¸é¿ªÀ» Ã¥ÀÓÁö´Â µçµçÇÑ Ä£±¸!", "¾î¸° ½ÃÀý ¸ðµÎÀÇ °¡½¿À» ¶Ù°Ô ¸¸µé¾ú´ø ±×°Í","¼ö¼úÇÏ¸é Á¦ÀÏ ¸ÕÀú ¶°¿À¸£´Â ÀÇ»çµéÀÇ º£ÇÁ" },
-        {"±âµµ °¨¿°À» ÀÏÀ¸Å°´Â ¹ÙÀÌ·¯½º","È£Èí±â °¨¿°À» ÀÏÀ¸Å°´Â ¹ÙÀÌ·¯½º","´Ù¾çÇÑ Á¾·ùÀÇ °¨¿°À» ÀÏÀ¸Å°´Â ¹ÙÀÌ·¯½º","Á¦½ÃÄ« ¿Üµ¿µþ ÀÏ¸®³ëÀÌ ½ÃÄ«°í, °ú ¼±¹è´Â ±èÁø¸ð ±×´Â ³× »çÃÌ" },
-        {"","","","" },
+        {"ì¸ë¥˜ì˜ í¬ë§ì´ ë˜ê¸° ìœ„í•œ ìœ„ëŒ€í•œ ì²« ê±¸ìŒ!\nì‹¤í—˜ ëŒ€ìƒì€ ê°ê¸° ë°”ì´ëŸ¬ìŠ¤ì´ë‹¤.","ì‹œí•œë¶€ ì‘ê¸‰ ìˆ˜ìˆ  ë³´ì¡°ì— ë§‰ëŒ€í•œ ê³µì„ ì„¸ì› ë‹¤!\ní™˜ìžì˜ ê±´ê°•ìƒíƒœê°€ ë§¤ìš° ì¢‹ì•„ì¡Œë‹¤.","",""},
+        {"ì•„í”Œ ë•Œ ëŠ˜ í•¨ê»˜í•´ì˜¨ ì¹œêµ¬ì˜ ëª¨ì–‘ì„ ë³¸ ë–  ë§Œë“  ìž¥ë¹„", "ìš°ë¦¬ ëª¸ì˜ ë©´ì—­ì„ ì±…ìž„ì§€ëŠ” ë“ ë“ í•œ ì¹œêµ¬!", "ì–´ë¦° ì‹œì ˆ ëª¨ë‘ì˜ ê°€ìŠ´ì„ ë›°ê²Œ ë§Œë“¤ì—ˆë˜ ê·¸ê²ƒ","ìˆ˜ìˆ í•˜ë©´ ì œì¼ ë¨¼ì € ë– ì˜¤ë¥´ëŠ” ì˜ì‚¬ë“¤ì˜ ë² í”„" },
+        {"ê¸°ë„ ê°ì—¼ì„ ì¼ìœ¼í‚¤ëŠ” ë°”ì´ëŸ¬ìŠ¤","í˜¸í¡ê¸° ê°ì—¼ì„ ì¼ìœ¼í‚¤ëŠ” ë°”ì´ëŸ¬ìŠ¤","ë‹¤ì–‘í•œ ì¢…ë¥˜ì˜ ê°ì—¼ì„ ì¼ìœ¼í‚¤ëŠ” ë°”ì´ëŸ¬ìŠ¤","ì œì‹œì¹´ ì™¸ë™ë”¸ ì¼ë¦¬ë…¸ì´ ì‹œì¹´ê³ , ê³¼ ì„ ë°°ëŠ” ê¹€ì§„ëª¨ ê·¸ëŠ” ë„¤ ì‚¬ì´Œ" },
+        {"","","","" }
 
 
     };
@@ -60,7 +60,7 @@ public class DataUIScript : MonoBehaviour
 
         for (int i = 0; i < dataButtons.Length; i++)
         {
-            int buttonIndex = i; // Å¬·ÎÀú¿¡¼­ »ç¿ëÇÏ±â À§ÇØ º°µµÀÇ º¯¼ö¿¡ ÀúÀå
+            int buttonIndex = i; // Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             dataButtons[i].onClick.AddListener(() => OnClickDataButton(buttonIndex));
         }
     }

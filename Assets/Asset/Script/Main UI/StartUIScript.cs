@@ -16,11 +16,12 @@ public class StartUIScript : MonoBehaviour
     private Sprite[] stageSprites;
 
 
-    private string[] stageName = { "¿¬±¸¼Ò", "º´¿ø", "ÀÇ·á±â±â ÇÐÈ¸" };
+    private string[] stageName = { "ì—°êµ¬ì†Œ", "ë³‘ì›", "ì˜ë£Œê¸°ê¸° í•™íšŒ" };
 
-    private string[] stageStory = { "ÀÓ»ó½ÃÇè ½ÃÀÛ! ³» ·Îº¿Àº ²À ¼¼»óÀ» ±¸ÇÒ ¼ö ÀÖÀ» °ÍÀÌ´Ù.",
-        " ¼Ò¹®À» µè°í ¾Æ´Â Ä£±¸ÀÇ ¾Æ´Â µ¿»ýÀÇ ¾Æ´Â Çü´ÔÀÇ ¾Æ´Â ½ÃÇÑºÎ¿¡°Ô Ä¡·á ¿äÃ»ÀÌ ¿Ô´Ù.",
-        " ½ÃÇÑºÎ¸¦ Ä¡·áÇß´Ù´Â ±â»ç¸¦ ÅëÇØ ÇÐÈ¸¿¡¼­ Á÷Á¢ º¸°í½Í´Ù°í ÃÊÃ»À» º¸³Â´Ù." };
+    private string[] stageStory = { "ìž„ìƒì‹œí—˜ ì‹œìž‘! ë‚´ ë¡œë´‡ì€ ê¼­ ì„¸ìƒì„ êµ¬í•  ìˆ˜ ìžˆì„ ê²ƒì´ë‹¤.",
+        " ì†Œë¬¸ì„ ë“£ê³  ì•„ëŠ” ì¹œêµ¬ì˜ ì•„ëŠ” ë™ìƒì˜ ì•„ëŠ” í˜•ë‹˜ì˜ ì•„ëŠ” ì‹œí•œë¶€ì—ê²Œ ì¹˜ë£Œ ìš”ì²­ì´ ì™”ë‹¤.",
+        " ì‹œí•œë¶€ë¥¼ ì¹˜ë£Œí–ˆë‹¤ëŠ” ê¸°ì‚¬ë¥¼ í†µí•´ í•™íšŒì—ì„œ ì§ì ‘ ë³´ê³ ì‹¶ë‹¤ê³  ì´ˆì²­ì„ ë³´ëƒˆë‹¤." };
+
 
 
 
